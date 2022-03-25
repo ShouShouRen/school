@@ -54,6 +54,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
 }
 
 .hero {
@@ -90,9 +91,20 @@ img {
     background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
     background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
 }
+.bg-grey{
+    background-color: #4b4b4b;
+}
+.bg-blue{
+    background-color: #f38181de;
+}
+.bg-fliter{
+    backdrop-filter: blur(250px);
+    box-shadow: 10px 0px 20px black;
+}
 /* compontent */
 #carouselExampleFade h1 {
     font-size: 48px;
+    z-index: 2;
 }
 #teacher p{
     font-size: 24px;
