@@ -112,5 +112,8 @@ img {
     line-height: 48px;
 }
 
-
+#teacher .shod{
+    box-shadow: 15px 10px 10px #222;
+    border-radius: 40px;
+}
 
