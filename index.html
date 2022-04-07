@@ -124,42 +124,62 @@
                 <div class="masonry-row">
                     <div class="masonry-col">
                         <div class="eval-card">
-                            <img class="image img-fluid" src="./images/allpic/001.jpg">
-                        </div>
-                    </div>
-                    <div class="masonry-col">
-                        <div class="eval-card" style="height: 400px;">
-                            <img class="image img-fluid" src="./images/allpic/002.jpg">
+                            <img class="image img-fluid" src="images/allpic/p1.jpg">
                         </div>
                     </div>
                     <div class="masonry-col">
                         <div class="eval-card">
-                            <img class="image img-fluid" src="./images/allpic/003.jpg">
+                            <img class="image img-fluid" src="images/allpic/p2.jpg">
                         </div>
                     </div>
                     <div class="masonry-col">
                         <div class="eval-card">
-                            <img class="image img-fluid" src="./images/allpic/004.jpg">
+                            <img class="image img-fluid" style="height: 350px;" src="images/allpic/p3.jpg">
                         </div>
                     </div>
                     <div class="masonry-col">
                         <div class="eval-card">
-                            <img class="image img-fluid" src="./images/allpic/004.jpg">
+                            <img class="image img-fluid" src="images/allpic/p4.jpg">
                         </div>
                     </div>
                     <div class="masonry-col">
                         <div class="eval-card">
-                            <img class="image img-fluid" src="./images/allpic/003.jpg">
+                            <img class="image img-fluid" src="images/allpic/p1.jpg">
                         </div>
                     </div>
                     <div class="masonry-col">
                         <div class="eval-card">
-                            <img class="image img-fluid" src="./images/allpic/002.jpg">
+                            <img class="image img-fluid" src="images/allpic/p5.jpg">
                         </div>
                     </div>
                     <div class="masonry-col">
                         <div class="eval-card">
-                            <img class="image img-fluid" src="./images/allpic/001.jpg">
+                            <img class="image img-fluid" style="height: 400px;" src="images/allpic/p6.jpg">
+                        </div>
+                    </div>
+                    <div class="masonry-col">
+                        <div class="eval-card">
+                            <img class="image img-fluid" src="images/allpic/p1.jpg">
+                        </div>
+                    </div>
+                    <div class="masonry-col">
+                        <div class="eval-card">
+                            <img class="image img-fluid" src="images/allpic/p1.jpg">
+                        </div>
+                    </div>
+                    <div class="masonry-col">
+                        <div class="eval-card">
+                            <img class="image img-fluid" src="images/allpic/p1.jpg">
+                        </div>
+                    </div>
+                    <div class="masonry-col">
+                        <div class="eval-card">
+                            <img class="image img-fluid" src="images/allpic/p1.jpg">
+                        </div>
+                    </div>
+                    <div class="masonry-col">
+                        <div class="eval-card">
+                            <img class="image img-fluid" src="images/allpic/p1.jpg">
                         </div>
                     </div>
                 </div>
@@ -236,9 +256,16 @@
     // })
 
     // masonry
-    $('.masonry-row').masonry({
-        itemSelector: '.masonry-col'
-    })
+    // $('.masonry-row').masonry({
+    //     itemSelector: '.masonry-col'
+    // })
+
+    jQuery(window).on('load', function () {
+        $('.masonry-row').masonry({
+            // options
+            itemSelector: '.masonry-col',
+        });
+    });
 </script>
 
 
