@@ -93,7 +93,8 @@
     </div>
     <!-- slider end -->
     <section id="teacher" class="hero hero-third">
-        <div class="container bg-warning p-5 shod" data-aos="flip-down" data-aos-duration="1200" data-aos-easing="ease-out-back">
+        <div class="container bg-warning p-5 shod" data-aos="flip-down" data-aos-duration="1200"
+            data-aos-easing="ease-out-back">
             <h2 class="text-center">班導:陳世昌</h2>
             <div class="row">
                 <div class="col-lg-6 col-md-12">
@@ -108,15 +109,33 @@
     </section>
     <section id="pic" class="hero">
         <div class="container">
-            <h2 class="text-start" style="transform: rotate(-15deg);">職二中的回憶錄</h2>
-
+            <!-- <h2 class="text-start" style="transform: rotate(-15deg);">職二中的回憶錄</h2> -->
+            <span class="text text-first">職二忠的</span>
+            <span class="text text-sec"></span>
         </div>
     </section>
 </body>
 <!-- Latest compiled JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
 <script>
     AOS.init();
+    const text = document.querySelector('.text-sec')
+
+    const textLoad = () => {
+        setTimeout(() => {
+            text.textContent = '美好回憶'
+        },0)
+        setTimeout(() => {
+            text.textContent = '這些年'
+        },4000)
+        setTimeout(() => {
+            text.textContent = '青春'
+        },8000)
+    }
+    textLoad();
+    setInterval(textLoad(),12000);
 </script>
+
 </html>

@@ -5,6 +5,8 @@
     box-sizing: border-box;
     position: relative;
     font-family: 'Noto Sans TC', sans-serif;
+    letter-spacing: 4px;
+    overflow: hidden;
 }
 
 .bg-gradient {
@@ -119,9 +121,6 @@ img {
     font-size: 80px;
     color: #99FFCD;
 }
-#carouselExampleFade .text.text-first{
-
-}
 #teacher p{
     font-size: 24px;
     letter-spacing: 4px;
@@ -134,4 +133,31 @@ img {
 }
 #teacher img{
     border-radius: 50%;
+}
+#pic .text{
+    font-size: 32px;
+    font-weight: 600;
+    color: #9FB4FF;
+}
+#pic .text.text-first{
+    color: #222;
+}
+#pic .text.text.text-sec::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-left: 2px solid #000;
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate {
+    40%,60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
 }
