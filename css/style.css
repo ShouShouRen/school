@@ -351,10 +351,43 @@ img {
     transition: all 0.3s 1s ease-out;
 }
 
-
-#content {
-    margin: 0 auto;
-    padding-bottom: 50px;
-    width: 80%;
-    max-width: 978px;
+/* masonry */
+.masonry-row{
+	margin-left: -16px;
+	margin-right: -16px;
 }
+.masonry-col{
+	padding-left: 16px;
+	padding-right: 16px;
+	width: calc(100% / 3);
+}
+@media (max-width:768px) {
+	.masonry-col{
+		width: calc(100% / 2);
+	}
+}
+@media (max-width:540px) {
+	.masonry-col{
+		width: 100%;
+	}
+}
+/* evaluation card */
+.eval-card{
+	padding: 16px;
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+	background-color: #fff;
+	width: 100%;
+	margin-bottom: 32px;
+}
+.eval-card .image{
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 16px;
+}
+.eval-card .para{
+	line-height: 32px;
+	font-size: 16px;
+}
+
+
+
