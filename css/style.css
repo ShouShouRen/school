@@ -114,6 +114,13 @@ img {
     font-size: 48px;
     z-index: 2;
 }
+#carouselExampleFade .text{
+    font-size: 80px;
+    color: #99FFCD;
+}
+#carouselExampleFade .text.text-first{
+    
+}
 #teacher p{
     font-size: 24px;
     letter-spacing: 4px;
