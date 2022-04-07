@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    <div id="preloader"></div>
     <!-- header start -->
     <nav class="navbar navbar-expand-lg bg-fliter navbar-light fixed-top">
         <div class="container">
@@ -112,6 +113,7 @@
             <!-- <h2 class="text-start" style="transform: rotate(-15deg);">職二中的回憶錄</h2> -->
             <span class="text text-first">職二忠的</span>
             <span class="text text-sec"></span>
+
         </div>
     </section>
 </body>
@@ -119,7 +121,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src=""></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
 <script>
     AOS.init();
@@ -139,7 +141,12 @@
     textLoad();
     setInterval(textLoad, 12000);
 
-
+    // loader
+    var loader = document.querySelector('#preloader');
+    // setTimeout("loading()",3000);
+    window.addEventListener("load", function () {
+        loader.style.display = "none";
+    })
     // scrollreveal
     ScrollReveal().reveal('.js-fadeInBottom', {
         origin: 'bottom',

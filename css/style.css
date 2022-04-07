@@ -6,6 +6,8 @@
     position: relative;
     font-family: 'Noto Sans TC', sans-serif;
     letter-spacing: 4px;
+    background-size: cover;
+    object-fit: cover;
 }
 
 .bg-gradient {
@@ -160,3 +162,44 @@ img {
         left: 0%;
     }
 }
+
+#preloader{
+    background: #000 url('../images/loader.gif') no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 999999;
+}
+/* .loading{
+    width: 100%;
+    height: 100vh;
+    background-color: #00000080;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.loading .load{
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50vh - 40px);
+    left: calc(50vw - 40px);
+    clip-path: polygon(0 0,50% 0,50% 100%,0% 100%);
+    animation: run 10s linear infinite;
+}
+@keyframes run {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(3600deg);
+    }
+} */
+
+
+
+
