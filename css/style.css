@@ -112,6 +112,7 @@ img {
 /* compontent */
 #carouselExampleFade h1 {
     font-size: 48px;
+    color: red;
     z-index: 2;
 }
 #carouselExampleFade .text{
@@ -119,7 +120,7 @@ img {
     color: #99FFCD;
 }
 #carouselExampleFade .text.text-first{
-    
+
 }
 #teacher p{
     font-size: 24px;
