@@ -98,10 +98,10 @@ img {
 }
 
 .bg-grey {
-    background-color: #4b4b4b;
+    background-color: rgba(0,0,0,0.7);
 }
 
-.bg-blue {
+.bg-red {
     background-color: #f38181de;
 }
 
