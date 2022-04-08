@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://unpkg.com/nanogallery2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    </link>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -344,8 +346,11 @@
             </div>
         </div>
     </section>
+    <div class="container">
+        <div id="nanogallery2"></div>
+    </div>
     <footer class="text-center" style="background-color: #222; color: #fff;">
-        By Chen Wei Ren All Right &copy;
+        By Chen Wei Ren Design RWD All Right&copy;
     </footer>
     <!-- Messenger 洽談外掛程式 Code -->
     <div id="fb-root"></div>
@@ -359,6 +364,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/jquery.nanogallery2.min.js"></script>
 <script>
     AOS.init();
     const text = document.querySelector('.text-sec')
@@ -417,5 +423,84 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
+
+
+
+<script>
+    $("#nanogallery2").nanogallery2({
+        thumbnailWidth: 400, // 縮圖寬度
+        thumbnailHeight: 00, // 縮圖高度
+        galleryDisplayMode: "moreButton",
+        galleryDisplayMoreStep: 2, // 最多顯示幾行
+        items: [{
+            src: './images/allpic/p1.jpg',
+            srct: './images/allpic/p1.jpg',
+        }, {
+            src: './images/allpic/p2.jpg',
+            srct: './images/allpic/p2.jpg',
+            
+        }, {
+            src: './images/allpic/p3.jpg',
+            srct: './images/allpic/p3.jpg',
+            
+        }, {
+            src: './images/allpic/p4.jpg',
+            srct: './images/allpic/p4.jpg',
+            
+        }, {
+            src: './images/allpic/p5.jpg',
+            srct: './images/allpic/p5.jpg',
+            
+        }, {
+            src: './images/allpic/p6.jpg',
+            srct: './images/allpic/p6.jpg',
+            
+        }, {
+            src: './images/allpic/p7.jpg',
+            srct: './images/allpic/p7.jpg',
+            
+        }, {
+            src: './images/allpic/p8.jpg',
+            srct: './images/allpic/p8.jpg',
+            
+        }, {
+            src: './images/allpic/p9.jpg',
+            srct: './images/allpic/p9.jpg',
+           
+        }, {
+            src: './images/allpic/p10.jpg',
+            srct: './images/allpic/p10.jpg',
+            
+        }, {
+            src: './images/allpic/p11.jpg',
+            srct: './images/allpic/p11.jpg',
+            
+        }, {
+            src: './images/allpic/p12.jpg',
+            srct: './images/allpic/p12.jpg',
+            
+        }, {
+            src: './images/allpic/p13.jpg',
+            srct: './images/allpic/p13.jpg',
+           
+        }, {
+            src:'./images/allpic/p14.jpg',
+            srct:'./images/allpic/p14.jpg'
+        }, {
+            src: './images/allpic/p15.jpg',
+            srct: './images/allpic/p15.jpg',
+            
+        }, {
+            src: './images/allpic/p16.jpg',
+            srct: './images/allpic/p16.jpg',
+           
+        }]
+        });
+</script>
+
+
+
+
+
 
 </html>
