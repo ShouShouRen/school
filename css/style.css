@@ -374,11 +374,16 @@ img {
 /* evaluation card */
 .eval-card{
 	padding: 16px;
-	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
-	background-color: #fff;
+	/* box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3); */
+    box-shadow: 0 15px 20px rgb(0 0 0 / 20%);
+	/* background-color: #fff; */
 	width: 100%;
     /* height: 300px; */
 	margin-bottom: 32px;
+    transition: all .3s linear;
+}
+.eval-card:hover{
+    background-color: #222;
 }
 .eval-card .image{
 	display: inline-block;
