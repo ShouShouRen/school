@@ -109,9 +109,11 @@ img {
     backdrop-filter: blur(250px);
     box-shadow: 10px 0px 20px black;
 }
-.text-test{
+
+.text-test {
     color: #78938A;
 }
+
 .bg-blue {
     /* background-image: linear-gradient(to right top, #003f70, #006ba1, #0098b5, #00c4a4, #12eb75); */
     background: #2196f3;
