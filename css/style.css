@@ -416,3 +416,7 @@ img {
     font-size: 16px;
 }
 
+#footer ul li {
+    letter-spacing: 8px;
+    font-size: 18px;
+}
