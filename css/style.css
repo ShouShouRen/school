@@ -1033,3 +1033,24 @@ div[class^="bubble-"]:after {
         width: 75px;
     }
 }
+
+
+
+
+
+/* gotop */
+
+
+.gotop{
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    z-index: 999;
+    color: #222;
+    /* transform: translateX(200%)rotate(100deg); */
+    transition: .5s;
+    display: none;
+}
+.gotop.active{
+    transform: translateX(0),rotate(0);
+}
