@@ -1043,8 +1043,8 @@ div[class^="bubble-"]:after {
 
 .gotop{
     position: fixed;
-    bottom: 80px;
-    right: 30px;
+    bottom: 90px;
+    right: 27px;
     z-index: 999;
     color: #222;
     /* transform: translateX(200%)rotate(100deg); */
