@@ -1033,14 +1033,7 @@ div[class^="bubble-"]:after {
         width: 75px;
     }
 }
-
-
-
-
-
 /* gotop */
-
-
 .gotop{
     position: fixed;
     bottom: 90px;
