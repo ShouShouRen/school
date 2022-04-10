@@ -1077,12 +1077,12 @@ div[class^="bubble-"]:after {
 }
 /* product-item */
 .product-item:not(:last-child){
-    margin-bottom: 320px;
+    margin-bottom: 200px;
     /* border: 1px solid #000; */
 }
 .product-item .title{
     font-size: 64px;
-    color: #484848;
+    color: #143F6B;
     font-weight: 600;
     margin-bottom: 32px;
 }
@@ -1090,12 +1090,13 @@ div[class^="bubble-"]:after {
     margin-left: -64px;
 }
 .product-item .para{
-    font-size: 20px;
-    color: #484848;
-    line-height: 32px;
-    letter-spacing: 1px;
+    font-size: 24px;
+    color: #143F6B;
+    line-height: 48px;
+    letter-spacing: 12px;
     font-weight: 300;
     margin-bottom: 48px;
+    text-align: justify;
 }
 /* animation */
 .product-item.animated .image-container::after{
