@@ -1033,6 +1033,152 @@ div[class^="bubble-"]:after {
         width: 75px;
     }
 }
+/* component------------------------students */
+.btn{
+    display: inline-block;
+    vertical-align: top;
+    color: #666;
+    text-decoration: none;
+    border: 2px solid #666;
+    padding: 16px 32px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.btn:hover{
+    background-color: #666;
+    color: #fff;
+}
+.image-container{
+    /* border: 1px solid #000; */
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.image-container::before{
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 133.333333%;
+}
+.image-ratio-1-1::before{
+    padding-top: 100%;
+}
+.image-container .image{
+    position: absolute;
+    inset: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* hero */
+.hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+/* product-item */
+.product-item:not(:last-child){
+    margin-bottom: 320px;
+    /* border: 1px solid #000; */
+}
+.product-item .title{
+    font-size: 64px;
+    color: #484848;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+.product-item .title--left{
+    margin-left: -64px;
+}
+.product-item .para{
+    font-size: 20px;
+    color: #484848;
+    line-height: 32px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-bottom: 48px;
+}
+/* animation */
+.product-item.animated .image-container::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 0px;
+    background-color: #484848;
+    animation:
+    ani-drawLine .3s forwards,
+    ani-fillWidth 2s .5s forwards,
+    ani-block-Out .2s .5s forwards
+    ;
+}
+@keyframes ani-drawLine {
+    0%{
+        width: 8px;
+        height: 0;
+    }
+    100%{
+        width: 8px;
+        height: 100%;
+    }
+}
+@keyframes ani-fillWidth {
+    0%{
+        width: 8px;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes ani-block-Out {
+    0%{
+        width: 100%;
+        left: inherit;
+        right: 0;
+    }
+    100%{
+        width: 0%;
+        left: inherit;
+        right: 0;
+    }
+}
+.product-item.animated .image-container .image{
+    animation: ani-fadeIn .5s .6s backwards;
+}
+@keyframes ani-fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.product-item.animated .title{
+    animation: ani-fadeInUp .5s .5s backwards;
+}
+.product-item.animated .para{
+    animation: ani-fadeInUp .5s .65s backwards;
+}
+.product-item.animated .btn{
+    animation: ani-fadeInUp .5s .8s backwards;
+}
+
+
+
+@keyframes ani-fadeInUp {
+    0%{
+        transform: translate(0,50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+
+
+
+
 /* gotop */
 .gotop{
     position: fixed;
