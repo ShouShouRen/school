@@ -1081,7 +1081,7 @@ div[class^="bubble-"]:after {
     /* border: 1px solid #000; */
 }
 .product-item .title{
-    font-size: 64px;
+    font-size: 48px;
     color: #143F6B;
     font-weight: 600;
     margin-bottom: 32px;
