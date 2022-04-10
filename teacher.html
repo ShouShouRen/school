@@ -1,11 +1,89 @@
 <html lang="zh-Hant-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>職二忠</title>
+    <link rel="stylesheet" href="./vendor/normalize.css">
+    <link rel="stylesheet" href="./vendor/bootstrap-grid.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+    <div class="hero">
+        <div class="container">
+            <div class="product-item wow">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="image-container rellax" data-rellax-speed="5">
+                            <div class="image" style="background-image: url('images/img1.jpg');"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="title title--left">Luminaires, mobilier design et objets de décoration</h2>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aperiam
+                            accusantium fugiat, atque unde expedita laboriosam recusandae neque dolore velit, ipsum
+                            dicta doloremque voluptatem animi obcaecati, fuga saepe! Tempore, voluptatum.</p>
+                        <a href="#!" class="btn">EN SAVOIR PLUS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item wow">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="image-container image-ratio-1-1 rellax" data-rellax-speed="5">
+                            <div class="image" style="background-image: url('images/img2.jpg');"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <h2 class="title">Luminaires, mobilier design</h2>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aperiam
+                            accusantium fugiat, atque unde expedita laboriosam recusandae neque dolore velit, ipsum
+                            dicta doloremque voluptatem animi obcaecati, fuga saepe! Tempore, voluptatum.</p>
+                        <a href="#!" class="btn">EN SAVOIR PLUS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item wow">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="image-container rellax" data-rellax-speed="5">
+                            <div class="image" style="background-image: url('images/img3.jpg');"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="title title--left">Luminaires, mobilier design et objets de décoration</h2>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aperiam
+                            accusantium fugiat, atque unde expedita laboriosam recusandae neque dolore velit, ipsum
+                            dicta doloremque oluptatem animi obcaecati, fuga saepe! Tempore, voluptatum.</p>
+                        <a href="#!" class="btn">EN SAVOIR PLUS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="./vendor/rellax.min.js"></script>
+<script src="./vendor/wow.min.js"></script>
+<script>
+    wow = new WOW(
+        {
+            boxClass: 'wow',      // default
+            animateClass: 'animated', // default
+            offset: 150,          // default
+            mobile: true,       // default
+            live: true        // default
+        }
+    )
+    wow.init();
+
+
+    // rellax.js
+
+    var rellax = new Rellax('.rellax', {
+        center: true
+    });
+</script>
+
 </html>
