@@ -50,7 +50,7 @@
                         <a class="nav-link animate__fadeInLeft animate__animated animate__slow" href="#">學生介紹</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link animate__fadeInLeft animate__animated animate__slow" href="#">老師介紹</a>
+                        <a class="nav-link animate__fadeInLeft animate__animated animate__slow" href="teacher.html">老師介紹</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link animate__fadeInLeft animate__animated animate__slow"
@@ -356,14 +356,6 @@
     }
     textLoad();
     setInterval(textLoad, 12000);
-
-    // loader
-    $(document).ready(function () {
-        setTimeout(function () {
-            $('body').addClass('loaded');
-            $('h1').css('color', '#222222');
-        }, 2500);
-    });
     // masonry
     jQuery(window).on('load', function () {
         $('.masonry-row').masonry({
