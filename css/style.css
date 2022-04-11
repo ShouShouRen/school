@@ -214,12 +214,10 @@ img {
     border-radius: 50%;
     border: 3px solid transparent;
     border-top-color: #3498db;
-
     -webkit-animation: spin 2s linear infinite;
     /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 2s linear infinite;
     /* Chrome, Firefox 16+, IE 10+, Opera */
-
     z-index: 1001;
 }
 
@@ -250,7 +248,6 @@ img {
     border-radius: 50%;
     border: 3px solid transparent;
     border-top-color: #f9c922;
-
     -webkit-animation: spin 1.5s linear infinite;
     /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 1.5s linear infinite;
@@ -286,7 +283,6 @@ img {
         transform: rotate(0deg);
         /* Firefox 16+, IE 10+, Opera */
     }
-
     100% {
         -webkit-transform: rotate(360deg);
         /* Chrome, Opera 15+, Safari 3.1+ */
@@ -296,7 +292,6 @@ img {
         /* Firefox 16+, IE 10+, Opera */
     }
 }
-
 #loader-wrapper .loader-section {
     position: fixed;
     top: 0;
@@ -320,7 +315,7 @@ img {
     right: 0;
 }
 
-/* Loaded */
+/* loder */
 .loaded #loader-wrapper .loader-section.section-left {
     -webkit-transform: translateX(-100%);
     /* Chrome, Opera 15+, Safari 3.1+ */
@@ -1069,11 +1064,6 @@ div[class^="bubble-"]:after {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
-/* hero */
-.hero{
-    padding-top: 200px;
-    padding-bottom: 200px;
 }
 /* product-item */
 .product-item:not(:last-child){
